@@ -1,0 +1,4 @@
+sqlite
+app/dist
+app/*.log
+app/.tmp
