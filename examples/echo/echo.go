@@ -30,7 +30,11 @@ func processMsg(event string, data any) (map[string]any, error) {
 	if !ok {
 		return nil, errors.New("no message field")
 	}
+	message, ok := messageIfc.(string)
+	if !ok {
+		return nil, errors.New("mesage not a string")
+	}
 	result := make(map[string]any)
-	result["echo"] = messageIfc
+	result["echo"] = "echoed value: " + message
 	return result, nil
 }
