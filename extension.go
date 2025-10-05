@@ -14,7 +14,7 @@ import (
 
 // Mostly adapted from https://github.com/gorilla/websocket/blob/main/examples/echo/client.go
 
-type processFn func(string, any) (map[string]any, error)
+type ProcessFn func(string, any) (map[string]any, error)
 
 type ConnInfo struct {
 	Port string `json:"nlPort"`
@@ -22,7 +22,7 @@ type ConnInfo struct {
 	ConnToken string `json:"nlConnectToken"`
 	ExtId string `json:"nlExtensionId"`
 	conn *websocket.Conn
-	process processFn
+	process ProcessFn
 }
 
 /*
@@ -80,7 +80,7 @@ func (ci ConnInfo) SendMessage(event string, data map[string]any) error {
 	return nil
 }
 
-func (ci ConnInfo) StartMessageLoop(process processFn) error {
+func (ci ConnInfo) StartMessageLoop(process ProcessFn) error {
 
 	interruptCh := make(chan os.Signal, 1)
 	signal.Notify(interruptCh, os.Interrupt)

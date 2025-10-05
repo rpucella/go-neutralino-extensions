@@ -78,7 +78,7 @@
   "cli": {
     "binaryName": "sqlite-app",
     "resourcesPath": "/resources/",
-    "extensionsPath": "../",
+    "extensionsPath": "/extensions/",
     "clientLibrary": "/resources/js/neutralino.js",
     "binaryVersion": "6.1.0",
     "clientVersion": "6.1.0"
@@ -86,7 +86,7 @@
   "extensions": [
     {
       "id": "sqlite_extension",
-      "command": "${NL_PATH}/../sqlite"
+      "command": "${NL_PATH}/extensions/sqlite &> sqlite.log"
     }
   ]
 }
