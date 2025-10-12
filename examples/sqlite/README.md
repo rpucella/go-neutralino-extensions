@@ -22,3 +22,6 @@ Run the created app (depending on your architecture):
     
 Profit.
 
+**Note**: you need to run the app from the directory in which `inputs.db` lives. So in the above line, since `inputs.db` is in the `app` directory, I run the app using `./dist/sqlite-app/<executable>`
+
+
