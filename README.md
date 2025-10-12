@@ -1,16 +1,16 @@
 # Go Neutralinojs extension package
 
-A simple package for writing [Neutralinojs] extensions in Go.
+A simple package for writing [Neutralinojs](https://neutralino.js.org/) extensions in Go.
 
 ## To use
 
 Add to a new Go project:
 
-    go get https://github.com/rpucella/go-neutralino-extensions
+    go get https://github.com/rpucella/go-neutralino-extension
     
 Import into your file:
 
-	import "github.com/rpucella/go-neutralino-extensions"
+	import "github.com/rpucella/go-neutralino-extension"
 
 The package imports as `neutralinoext`.
 

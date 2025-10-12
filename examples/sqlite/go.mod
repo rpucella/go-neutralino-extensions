@@ -1,10 +1,10 @@
-module github.com/rpucella/go-neutralino-extensions/examples/sqlite
+module github.com/rpucella/go-neutralino-extension/examples/sqlite
 
 go 1.23.3
 
 require (
 	github.com/mattn/go-sqlite3 v1.14.32
-	github.com/rpucella/go-neutralino-extensions v0.0.0-20251001050614-a8cde5c425f5
+	github.com/rpucella/go-neutralino-extension v0.0.0-20251001050614-a8cde5c425f5
 )
 
 require (
@@ -13,4 +13,4 @@ require (
 )
 
 // Redirect module to use the one in this exact repo.
-replace github.com/rpucella/go-neutralino-extensions => ../..
+replace github.com/rpucella/go-neutralino-extension => ../..

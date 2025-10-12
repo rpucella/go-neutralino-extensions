@@ -4,7 +4,7 @@ import (
 	"os"
 	"fmt"
 	"errors"
-	"github.com/rpucella/go-neutralino-extensions"
+	"github.com/rpucella/go-neutralino-extension"
 	"database/sql"
 	_ "github.com/mattn/go-sqlite3"
 )
